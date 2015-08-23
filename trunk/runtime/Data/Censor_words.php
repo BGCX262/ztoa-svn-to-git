@@ -1,0 +1,1 @@
+<?php	return array ( 'filter' => array ( ), 'banned' => '', 'mod' => array ( 0 => '/(http|https):\\/\\//', ), );?>

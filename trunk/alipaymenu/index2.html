@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>模仿支付宝首页多级下拉菜单功能</title>
+<link charset="utf-8" rel="stylesheet" href="css/lanrenzhijia1.css">
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+      // html5shiv MIT @rem remysharp.com/html5-enabling-script
+      // iepp v1.6.2 MIT @jon_neal iecss.com/print-protector
+    /*@cc_on(function(a,b){function r(a){var b=-1;while(++b<f)a.createElement(e[b])}if(!(!window.attachEvent||!b.createStyleSheet||!function(){var a=document.createElement("div");a.innerHTML="<elem></elem>";return a.childNodes.length!==1}())){a.iepp=a.iepp||{};var c=a.iepp,d=c.html5elements||"abbr|article|aside|audio|canvas|datalist|details|figcaption|figure|footer|header|hgroup|mark|meter|nav|output|progress|section|summary|time|video",e=d.split("|"),f=e.length,g=new RegExp("(^|\\s)("+d+")","gi"),h=new RegExp("<(/*)("+d+")","gi"),i=/^\s*[\{\}]\s*$/,j=new RegExp("(^|[^\\n]*?\\s)("+d+")([^\\n]*)({[\\n\\w\\W]*?})","gi"),k=b.createDocumentFragment(),l=b.documentElement,m=l.firstChild,n=b.createElement("body"),o=b.createElement("style"),p=/print|all/,q;c.getCSS=function(a,b){if(a+""===undefined)return"";var d=-1,e=a.length,f,g=[];while(++d<e){f=a[d];if(f.disabled)continue;b=f.media||b,p.test(b)&&g.push(c.getCSS(f.imports,b),f.cssText),b="all"}return g.join("")},c.parseCSS=function(a){var b=[],c;while((c=j.exec(a))!=null)b.push(((i.exec(c[1])?"\n":c[1])+c[2]+c[3]).replace(g,"$1.iepp_$2")+c[4]);return b.join("\n")},c.writeHTML=function(){var a=-1;q=q||b.body;while(++a<f){var c=b.getElementsByTagName(e[a]),d=c.length,g=-1;while(++g<d)c[g].className.indexOf("iepp_")<0&&(c[g].className+=" iepp_"+e[a])}k.appendChild(q),l.appendChild(n),n.className=q.className,n.id=q.id,n.innerHTML=q.innerHTML.replace(h,"<$1font")},c._beforePrint=function(){o.styleSheet.cssText=c.parseCSS(c.getCSS(b.styleSheets,"all")),c.writeHTML()},c.restoreHTML=function(){n.innerHTML="",l.removeChild(n),l.appendChild(q)},c._afterPrint=function(){c.restoreHTML(),o.styleSheet.cssText=""},r(b),r(k);if(c.disablePP)return;m.insertBefore(o,m.firstChild),o.media="print",o.className="iepp-printshim",a.attachEvent("onbeforeprint",c._beforePrint),a.attachEvent("onafterprint",c._afterPrint)}})(this,document)@*/
+    </script>
+    <![endif]-->
+<!--[if IE]>
+    <style type="text/css">
+      .pic, .txt, .bg {
+        opacity: 1;
+      }
+      #banner .txt {
+        top: 50px;
+        left: 0;
+      }
+      #banner .pic-1, #banner .pic-2 {
+        left: 0;
+      }
+      #banner .pic-3 {
+        left: 46%;
+      }
+    </style>
+    <![endif]-->
+</head>
+<body>
+
+
+
+    
+      <ul class="nav">
+        <li class="nav-item business"> <a href="#"  class="nav-item-link">商家服务1111111</a>
+          <div class="nav-item-sub sl-shadow">
+            <table class="nav-item-table">
+            
+                <tr>
+                  <th>产品商店</th>
+                  <th>技术支持</th>
+                  <th>增值服务</th>
+                  <th class="last">我的商家服务</th>
+                </tr>
+
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >担保交易</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >商户自助集成</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >商家活动</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" >我的订单</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >即时到账</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >支付宝协助集成</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >营销工具</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" >我的产品</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >快捷登录</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >故障申报</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >第三方服务</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank">技术服务</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >团购收款</a></td>
+                  <td></td>
+                  <td></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" seed="Nav-bussiness-mycampaign">我参加的活动</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank">更多...</a></td>
+                  <td></td>
+                  <td></td>
+                  <td class="last"></td>
+                </tr>
+              
+            </table>
+          </div>
+          <div class="angle sl-angle"></div>
+        </li>
+		
+        <li class="nav-item business"> <a href="#"  class="nav-item-link">商家服务</a>
+          <div class="nav-item-sub sl-shadow">
+            <table class="nav-item-table">
+              <thead>
+                <tr>
+                  <th>产品商店</th>
+                  <th>技术支持</th>
+                  <th>增值服务</th>
+                  <th class="last">我的商家服务</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >担保交易</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >商户自助集成</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >商家活动</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" >我的订单</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >即时到账</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >支付宝协助集成</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >营销工具</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" >我的产品</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >快捷登录</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >故障申报</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >第三方服务</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank">技术服务</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >团购收款</a></td>
+                  <td></td>
+                  <td></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" seed="Nav-bussiness-mycampaign">我参加的活动</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank">更多...</a></td>
+                  <td></td>
+                  <td></td>
+                  <td class="last"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="angle sl-angle"></div>
+        </li>
+
+        <li class="nav-item business"> <a href="#"  class="nav-item-link">商家服务</a>
+          <div class="nav-item-sub sl-shadow">
+            <table class="nav-item-table">
+              <thead>
+                <tr>
+                  <th>产品商店</th>
+                  <th>技术支持</th>
+                  <th>增值服务</th>
+                  <th class="last">我的商家服务</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >担保交易</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >商户自助集成</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >商家活动</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" >我的订单</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >即时到账</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >支付宝协助集成</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >营销工具</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" >我的产品</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >快捷登录</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >故障申报</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >第三方服务</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank">技术服务</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >团购收款</a></td>
+                  <td></td>
+                  <td></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" seed="Nav-bussiness-mycampaign">我参加的活动</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank">更多...</a></td>
+                  <td></td>
+                  <td></td>
+                  <td class="last"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="angle sl-angle"></div>
+        </li>
+
+
+        <li class="nav-item business"> <a href="#"  class="nav-item-link">商家服务</a>
+          <div class="nav-item-sub sl-shadow">
+            <table class="nav-item-table">
+              <thead>
+                <tr>
+                  <th>产品商店</th>
+                  <th>技术支持</th>
+                  <th>增值服务</th>
+                  <th class="last">我的商家服务</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >担保交易</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >商户自助集成</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >商家活动</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" >我的订单</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >即时到账</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >支付宝协助集成</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >营销工具</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" >我的产品</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >快捷登录</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >故障申报</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >第三方服务</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank">技术服务</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >团购收款</a></td>
+                  <td></td>
+                  <td></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" seed="Nav-bussiness-mycampaign">我参加的活动</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank">更多...</a></td>
+                  <td></td>
+                  <td></td>
+                  <td class="last"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="angle sl-angle"></div>
+        </li>
+
+
+        <li class="nav-item business"> <a href="#"  class="nav-item-link">商家服务</a>
+          <div class="nav-item-sub sl-shadow">
+            <table class="nav-item-table">
+              <thead>
+                <tr>
+                  <th>产品商店</th>
+                  <th>技术支持</th>
+                  <th>增值服务</th>
+                  <th class="last">我的商家服务</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >担保交易</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >商户自助集成</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >商家活动</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" >我的订单</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >即时到账</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >支付宝协助集成</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >营销工具</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" >我的产品</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >快捷登录</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >故障申报</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >第三方服务</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank">技术服务</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >团购收款</a></td>
+                  <td></td>
+                  <td></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" seed="Nav-bussiness-mycampaign">我参加的活动</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank">更多...</a></td>
+                  <td></td>
+                  <td></td>
+                  <td class="last"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="angle sl-angle"></div>
+        </li>
+
+
+        <li class="nav-item business"> <a href="#"  class="nav-item-link">商家服务</a>
+          <div class="nav-item-sub sl-shadow">
+            <table class="nav-item-table">
+              <thead>
+                <tr>
+                  <th>产品商店</th>
+                  <th>技术支持</th>
+                  <th>增值服务</th>
+                  <th class="last">我的商家服务</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >担保交易</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >商户自助集成</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >商家活动</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" >我的订单</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >即时到账</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >支付宝协助集成</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >营销工具</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" >我的产品</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >快捷登录</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >故障申报</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >第三方服务</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank">技术服务</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >团购收款</a></td>
+                  <td></td>
+                  <td></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" seed="Nav-bussiness-mycampaign">我参加的活动</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank">更多...</a></td>
+                  <td></td>
+                  <td></td>
+                  <td class="last"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="angle sl-angle"></div>
+        </li>
+
+
+        <li class="nav-item business"> <a href="#"  class="nav-item-link">商家服务</a>
+          <div class="nav-item-sub sl-shadow">
+            <table class="nav-item-table">
+              <thead>
+                <tr>
+                  <th>产品商店</th>
+                  <th>技术支持</th>
+                  <th>增值服务</th>
+                  <th class="last">我的商家服务</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >担保交易</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >商户自助集成</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >商家活动</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" >我的订单</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >即时到账</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >支付宝协助集成</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >营销工具</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" >我的产品</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >快捷登录</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >故障申报</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >第三方服务</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank">技术服务</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >团购收款</a></td>
+                  <td></td>
+                  <td></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" seed="Nav-bussiness-mycampaign">我参加的活动</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank">更多...</a></td>
+                  <td></td>
+                  <td></td>
+                  <td class="last"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="angle sl-angle"></div>
+        </li>
+
+
+        <li class="nav-item business"> <a href="#"  class="nav-item-link">商家服务</a>
+          <div class="nav-item-sub sl-shadow">
+            <table class="nav-item-table">
+              <thead>
+                <tr>
+                  <th>产品商店</th>
+                  <th>技术支持</th>
+                  <th>增值服务</th>
+                  <th class="last">我的商家服务</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >担保交易</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >商户自助集成</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >商家活动</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" >我的订单</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >即时到账</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >支付宝协助集成</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >营销工具</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" >我的产品</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >快捷登录</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >故障申报</a></td>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >第三方服务</a></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank">技术服务</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank" >团购收款</a></td>
+                  <td></td>
+                  <td></td>
+                  <td class="last"><a href="http://www.lanrenzhijia.com/" target="_blank" seed="Nav-bussiness-mycampaign">我参加的活动</a></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.lanrenzhijia.com/" target="_blank">更多...</a></td>
+                  <td></td>
+                  <td></td>
+                  <td class="last"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="angle sl-angle"></div>
+        </li>		
+      </ul>
+    
+
+</body>
+</html>

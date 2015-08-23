@@ -1,0 +1,1 @@
+<?php	return array ( 'guest' => '1', 'code' => '0', 'check' => '0', 'stb' => '1', 'stbsum' => '1', 'order' => 'date DESC', 'strlength' => '400', 'status' => '1', 'expire' => '60', );?>

@@ -1,0 +1,21 @@
+<?php	return array ( 'Admin' => array ( 'module' => 'Admin', 'name' => '后台管理模块', 'url' => '', 'iscore' => '1', 'version' => '1.0', 'description' => '后台管理', 'setting' => '', 'listorder' => '0', 'disabled' => '1', 'installdate' => '2012-06-21', 'updatedate' => '2012-06-21', ), 'Attachment' => array ( 'module' => 'Attachment', 'name' => '附件模块', 'url' => '', 'iscore' => '1', 'version' => '1.0', 'description' => '附件管理', 'setting' => '', 'listorder' => '0', 'disabled' => '1', 'installdate' => '2012-06-21', 'updatedate' => '2012-06-21', ), 'Comments' => array ( 'module' => 'Comments', 'name' => '评论模块', 'url' => '', 'iscore' => '1', 'version' => '1.0', 'description' => '评论管理模块', 'setting' => '', 'listorder' => '0', 'disabled' => '1', 'installdate' => '2012-06-21', 'updatedate' => '2012-06-21', ), 'Contents' => array ( 'module' => 'Contents', 'name' => '内容模块', 'url' => '', 'iscore' => '1', 'version' => '1.0', 'description' => '内容模块', 'setting' => '', 'listorder' => '0', 'disabled' => '1', 'installdate' => '2012-06-21', 'updatedate' => '2012-06-21', ), 'Member' => array ( 'module' => 'Member', 'name' => '会员中心', 'url' => '', 'iscore' => '1', 'version' => '1.0', 'description' => '会员中心', 'setting' => 'a:31:{s:13:"allowregister";s:1:"1";s:11:"choosemodel";s:1:"1";s:14:"defaultmodelid";s:1:"3";s:15:"enablemailcheck";s:1:"0";s:14:"registerverify";s:1:"0";s:12:"showapppoint";s:1:"0";s:14:"rmb_point_rate";s:2:"10";s:12:"defualtpoint";s:1:"0";s:13:"defualtamount";s:1:"0";s:15:"showregprotocol";s:1:"0";s:11:"regprotocol";s:1755:"欢迎您注册成为ShuipFCMS用户,请仔细阅读下面的协议，只有接受协议才能继续进行注册。
+      1)从中国境内向外传输技术性资料时必须符合中国有关法规。 
+　　2)使用网站服务不作非法用途。 
+　　3)不干扰或混乱网络服务。 
+　　4)不在论坛BBS或留言簿发表任何与政治相关的信息。 
+　　5)遵守所有使用网站服务的网络协议、规定、程序和惯例。
+　　6)不得利用本站危害国家安全、泄露国家秘密，不得侵犯国家社会集体的和公民的合法权益。
+　　7)不得利用本站制作、复制和传播下列信息： 
+　　　1、煽动抗拒、破坏宪法和法律、行政法规实施的；
+　　　2、煽动颠覆国家政权，推翻社会主义制度的；
+　　　3、煽动分裂国家、破坏国家统一的；
+　　　4、煽动民族仇恨、民族歧视，破坏民族团结的；
+　　　5、捏造或者歪曲事实，散布谣言，扰乱社会秩序的；
+　　　6、宣扬封建迷信、淫秽、色情、赌博、暴力、凶杀、恐怖、教唆犯罪的；
+　　　7、公然侮辱他人或者捏造事实诽谤他人的，或者进行其他恶意攻击的；
+　　　8、损害国家机关信誉的；
+　　　9、其他违反宪法和法律行政法规的；
+　　　10、进行商业广告行为的。
+　　用户不能传输任何教唆他人构成犯罪行为的资料；不能传输长国内不利条件和涉及国家安全的资料；不能传输任何不符合当地法规、国家法律和国际法 律的资料。未经许可而非法进入其它电脑系统是禁止的。若用户的行为不符合以上的条款，ShuipFCMS将取消用户服务帐号。 ";s:21:"registerverifymessage";s:204:"欢迎您注册成为ShuipFCMS用户，您的账号需要邮箱认证，点击下面链接进行认证：<a href=\\"{$url}\\" title=\\"激活认证\\">请点击</a>
+或者将网址复制到浏览器：{$url}";s:14:"forgetpassword";s:174:"ShuipFCMS密码找回，请在一小时内点击下面链接进行操作：<a href=\\"{$url}\\" title=\\"密码找回\\">请点击</a>
+或者将网址复制到浏览器：{$url}";s:5:"ucuse";s:1:"0";s:10:"uc_connect";s:5:"mysql";s:6:"uc_api";s:0:"";s:5:"uc_ip";s:0:"";s:9:"uc_dbhost";s:9:"127.0.0.1";s:9:"uc_dbuser";s:0:"";s:7:"uc_dbpw";s:0:"";s:9:"uc_dbname";s:0:"";s:13:"uc_dbtablepre";s:0:"";s:12:"uc_dbcharset";s:4:"utf8";s:8:"uc_appid";s:0:"";s:6:"uc_key";s:0:"";s:11:"sinawb_akey";s:0:"";s:11:"sinawb_skey";s:0:"";s:9:"qqwb_akey";s:0:"";s:9:"qqwb_skey";s:0:"";s:7:"qq_akey";s:0:"";s:7:"qq_skey";s:0:"";}', 'listorder' => '0', 'disabled' => '1', 'installdate' => '2012-06-21', 'updatedate' => '2012-06-21', ), 'Models' => array ( 'module' => 'Models', 'name' => '模型管理', 'url' => '', 'iscore' => '1', 'version' => '1.0', 'description' => '模型管理', 'setting' => '', 'listorder' => '0', 'disabled' => '1', 'installdate' => '2012-06-21', 'updatedate' => '2012-06-21', ), 'Tags' => array ( 'module' => 'Tags', 'name' => 'TAG标签', 'url' => '', 'iscore' => '1', 'version' => '1.0', 'description' => 'TAG标签', 'setting' => '', 'listorder' => '0', 'disabled' => '1', 'installdate' => '2012-06-21', 'updatedate' => '2012-06-21', ), 'Template' => array ( 'module' => 'Template', 'name' => '模板管理', 'url' => '', 'iscore' => '1', 'version' => '1.0', 'description' => '前台模板管理', 'setting' => '', 'listorder' => '0', 'disabled' => '1', 'installdate' => '2012-06-21', 'updatedate' => '2012-06-21', ), 'Links' => array ( 'module' => 'Links', 'name' => '友情链接', 'url' => '', 'iscore' => '0', 'version' => '1.0', 'description' => '友情链接模块', 'setting' => '', 'listorder' => '0', 'disabled' => '1', 'installdate' => '2012-07-13', 'updatedate' => '2012-07-13', ), 'Api' => array ( 'module' => 'Api', 'name' => 'Api调用', 'url' => '', 'iscore' => '1', 'version' => '1.0', 'description' => 'Api调用', 'setting' => '', 'listorder' => '0', 'disabled' => '1', 'installdate' => '2012-06-21', 'updatedate' => '2012-06-21', ), );?>
